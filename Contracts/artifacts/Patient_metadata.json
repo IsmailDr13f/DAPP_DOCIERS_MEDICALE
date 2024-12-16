@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "patientAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "doctorAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "recordHash",
+						"type": "string"
+					}
+				],
+				"name": "AccessGranted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "patientAddress",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "doctorAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "recordHash",
+						"type": "string"
+					}
+				],
+				"name": "AccessRevoked",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_recordHash",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_doctorAddress",
+						"type": "address"
+					}
+				],
+				"name": "authorizeToMedicalFolder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_recordHash",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_doctorAddress",
+						"type": "address"
+					}
+				],
+				"name": "isDoctorAuthorized",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_recordHash",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_doctorAddress",
+						"type": "address"
+					}
+				],
+				"name": "revokeFromMedicalFolder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/ContractPatient.sol": "Patient"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/ContractPatient.sol": {
+			"keccak256": "0x0619edd4e96de799058affd1961e7e996a7bbc50ba7d96825ba31727f0042875",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f86c9e77fa686c03cff64b1b4d437f794536e3985f9e56324b84ed07f5442291",
+				"dweb:/ipfs/Qma6CEhUhG9jiQDvXPbdJxFEFuYrR5JrmaJLnHjfcgihk9"
+			]
+		}
+	},
+	"version": 1
+}

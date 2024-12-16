@@ -1,0 +1,293 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_doctorContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "doctorAuditLogs",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "actor",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "doctorContract",
+				"outputs": [
+					{
+						"internalType": "contract Doctor",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_doctorAddress",
+						"type": "address"
+					}
+				],
+				"name": "getDoctorAuditLogs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "actor",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "action",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Manager.AuditLog[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientAddress",
+						"type": "address"
+					}
+				],
+				"name": "getPatientAuditLogs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "actor",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "action",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Manager.AuditLog[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patientAuditLogs",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "actor",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patientContract",
+				"outputs": [
+					{
+						"internalType": "contract Patient",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_doctorAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "registerDoctor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_patientAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "registerPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/ContractAudit.sol": "Manager"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/ContractAudit.sol": {
+			"keccak256": "0x3d0cad1126f01d1a14106a2b777cd60216b501c6487fd665dbf84bc67cd213d1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ca4db3f03b958bbf51bd06bd84dfa7d1d41532a4e22af3236e9f0d063e3190b7",
+				"dweb:/ipfs/QmSVzDewvWPpGVaWdgTPQxpfZbQx5K3yqYFhc32PTje2HA"
+			]
+		},
+		"Contracts/ContractDoctor.sol": {
+			"keccak256": "0xf299ae4c975a10097cf896a113cedd42cbf5b749cea3e79ac408635412ece05a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ae5aa7fd90e2a756ecbafe64f9f89eaeb9dd607a8357c8f5adc42d7f84c69ccc",
+				"dweb:/ipfs/QmP5Hi6GrSrMeWYPubLa2YtzEoZ3T8EEwpVg7BHW5FPmzv"
+			]
+		},
+		"Contracts/ContractPatient.sol": {
+			"keccak256": "0xfa645e78723d82b0ed09805372e1d8a9f0c4a98f81e04049d2dcc3a36d67f135",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3d369fb7866f31192dbbab133103c30dc615167b9695c1cb6b3c06625bad6b7c",
+				"dweb:/ipfs/QmV3nXVBFQ2WKwcSG6wsg8YKrrGG6zXrKnKet9iK4cY7Vz"
+			]
+		}
+	},
+	"version": 1
+}
